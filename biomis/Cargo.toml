@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "blockchain",
+    "contracts/rust_contracts",
+    "biometric",
+    "wallet",
+    "api"
+]

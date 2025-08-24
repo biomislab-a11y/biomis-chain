@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = [
+    "biomis/api",
+    "biomis/biometric",
+    "biomis/blockchain",
+    "biomis/wallet"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Huara Kazama"]
+license = "MIT"
+repository = "https://github.com/biomis/biomis"
+description = "Biometric Identity System - Secure blockchain-based biometric authentication"
+
+[workspace.dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.143"
+sha2 = "0.10.9"
+ed25519-dalek = "2.2.0"
+rand = "0.8"
+base64 = "0.22.1"
+hex = "0.4"
+tokio = { version = "1.47.1", features = ["full"] }
+axum = "0.7"
+tower = "0.5.2"
+tower-http = { version = "0.5", features = ["cors"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+anyhow = "1.0.99"
+thiserror = "2.0.16"
